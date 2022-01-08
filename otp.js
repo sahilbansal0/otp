@@ -18,12 +18,31 @@ function otpgen() {
     let e1 = e.toString();
     let f1 = f.toString();
 
-    let z = a1 + b1 + c1 + d1 + e1 + f1;
+
+    window.value = a1 + b1 + c1 + d1 + e1 + f1;
     x = document.getElementById("op");
-    x.innerHTML = z;
-
-
+    x.innerHTML = window.value;
 
 
 }
-otpgen();
+
+
+function send() {
+
+    let l = document.getElementById("ot").value;
+
+
+    if (window.value == l) {
+        // console.log("true")
+        document.getElementById("submission").innerHTML = "The otp entered by you is correct,you can proceed further"
+    } else if (l == "") {
+        document.getElementById("submission").innerHTML = "Please,Enter your otp"
+
+
+    } else {
+        // console.log("false")
+        document.getElementById("submission").innerHTML = "The otp entered by you is incorrect!"
+    }
+    l = " ";
+
+}

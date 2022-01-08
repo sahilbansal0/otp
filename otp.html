@@ -12,16 +12,32 @@
 
 <body>
     <div class="container">
+        <div class="new">
+
+            <h3>
+                your one time password is:<br> <span id="op"></span>
+            </h3>
 
 
-        <h3>
-            your one time password is: <span id="op"></span>
-        </h3>
-
-
-        <button onclick="otpgen()">
+            <button onclick=" otpgen()" class="btn">
             Generate otp
         </button>
+        </div>
+    </div>
+    <div id="sub">
+        <span id="submission">
+
+        </span>
+
+    </div>
+
+    <div class="submit">
+        <div class="new">
+            <h3> Enter your otp</h3> <input type="text" id="ot">
+            <button onclick="send()" class="btn">
+        submit otp
+    </button>
+        </div>
     </div>
 
 
