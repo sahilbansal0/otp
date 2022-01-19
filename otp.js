@@ -49,6 +49,7 @@ function send() {
         // console.log("false")
         document.getElementById("submission").innerHTML = "The otp entered by you is incorrect!"
     }
-    l = " ";
+    document.getElementById("ot").value = " ";
+
 
 }
