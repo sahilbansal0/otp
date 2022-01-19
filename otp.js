@@ -23,9 +23,15 @@ function otpgen() {
     x = document.getElementById("op");
     x.innerHTML = window.value;
 
+    setTimeout(() => {
+        document.querySelector(".new").classList.add("hide")
+        document.querySelector(".submit").style.display = "block"
+
+    }, 4000);
+
+
 
 }
-
 
 function send() {
 
@@ -34,7 +40,7 @@ function send() {
 
     if (window.value == l) {
         // console.log("true")
-        document.getElementById("submission").innerHTML = "The otp entered by you is correct,you can proceed further"
+        document.getElementById("submission").innerHTML = "<a href='https://www.oneindia.com/games/'>Click to play Games</a>";
     } else if (l == "") {
         document.getElementById("submission").innerHTML = "Please,Enter your otp"
 
